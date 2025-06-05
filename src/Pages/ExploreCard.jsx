@@ -1,11 +1,9 @@
-import React from 'react';
-
 const ExploreCard = ({cart}) => {
+
     const {ID, ShortDescription} = cart;
     
     return (
         <div>
-        
             {ShortDescription}
         </div>
     );

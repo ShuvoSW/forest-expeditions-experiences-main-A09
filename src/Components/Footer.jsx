@@ -1,6 +1,5 @@
-import React from 'react';
-
 const Footer = () => {
+
   return (
     <div className='w-10/12 mx-auto mt-4'>
       <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10 grid lg:grid-cols-3 md:grid-cols-2 justify-between gap-8">

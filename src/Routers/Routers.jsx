@@ -6,36 +6,34 @@ import SignUp from "../Pages/SignUp";
 import Explore from "../Pages/Explore";
 import ErrorPage from "../ErrorPage/ErrorPage";
 
-
 const Routers = createBrowserRouter([
     {
         path: "/",
         element: <HomeLayouts></HomeLayouts>,
         children: [
-             {
+            {
                 path: "/",
-                element:<NewsCard></NewsCard>
+                element: <NewsCard></NewsCard>
             },
-             { 
-               path: "/registration",
-            element: <Registration></Registration>
+            {
+                path: "/registration",
+                element: <Registration></Registration>
             },
-             { 
-               path: "/signup",
-            element: <SignUp></SignUp>
+            {
+                path: "/signup",
+                element: <SignUp></SignUp>
             },
-             { 
-               path: "/explore",
-            element: <Explore></Explore>
+            {
+                path: "/explore",
+                element: <Explore></Explore>
             }
-]
+        ]
     },
     {
         path: "*",
         element: <ErrorPage></ErrorPage>
 
     }
- 
 ])
 
 export default Routers;

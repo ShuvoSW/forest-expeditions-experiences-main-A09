@@ -3,6 +3,7 @@ import logo from "../assets/react.svg"
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  
   return (
     <div className=''>
       <div className="navbar bg-base-100  shadow-sm flex justify-between w-10/12 mx-auto p-5 ">
@@ -17,7 +18,6 @@ const Navbar = () => {
           <NavLink >Profile</NavLink>
         </div>
         <div className="navbar-end ">
-          
           <NavLink to="/signup" className="btn ml-8">Login</NavLink>
         </div>
       </div>
