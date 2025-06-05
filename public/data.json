@@ -1,0 +1,192 @@
+[
+  {
+    "AdventureTitle": "Jungle River Rafting",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1001",
+    "CategoryName": "Water Adventures",
+    "ShortDescription": "Adrenaline-packed rafting through dense jungle rivers.",
+    "AdventureCost": 150.00,
+    "BookingAvailability": "Available",
+    "Location": "Amazon Rainforest, Brazil",
+    "Duration": "4 hours",
+    "AdventureLevel": "Intermediate",
+    "IncludedItems": ["Professional guide", "Safety gear", "Snacks", "First aid kit"],
+    "EcoFriendlyFeatures": ["Zero single-use plastics", "Carbon offsetting"],
+    "MaxGroupSize": 12,
+    "SpecialInstructions": [
+      "Wear water-resistant clothing",
+      "Bring a change of clothes"
+    ]
+  },
+  {
+    "AdventureTitle": "Desert Safari Expedition",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1002",
+    "CategoryName": "Land Adventures",
+    "ShortDescription": "Explore vast sand dunes in a thrilling desert safari.",
+    "AdventureCost": 200.00,
+    "BookingAvailability": "Limited",
+    "Location": "Sahara Desert, Morocco",
+    "Duration": "6 hours",
+    "AdventureLevel": "Beginner",
+    "IncludedItems": ["4x4 transport", "Lunch", "Camel ride"],
+    "EcoFriendlyFeatures": ["Solar-powered camps", "Water conservation"],
+    "MaxGroupSize": 10,
+    "SpecialInstructions": [
+      "Apply sunscreen",
+      "Bring sunglasses and a hat"
+    ]
+  },
+  {
+    "AdventureTitle": "Glacier Hike & Ice Climbing",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1003",
+    "CategoryName": "Mountain Adventures",
+    "ShortDescription": "Trek through icy terrains and climb ancient glaciers.",
+    "AdventureCost": 300.00,
+    "BookingAvailability": "Available",
+    "Location": "Vatnajökull, Iceland",
+    "Duration": "8 hours",
+    "AdventureLevel": "Advanced",
+    "IncludedItems": ["Crampons", "Climbing gear", "Thermal clothing"],
+    "EcoFriendlyFeatures": ["Minimal impact routes", "Eco-education"],
+    "MaxGroupSize": 8,
+    "SpecialInstructions": [
+      "Must be in good physical condition",
+      "Wear layered clothing"
+    ]
+  },
+  {
+    "AdventureTitle": "Cave Exploration Tour",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1004",
+    "CategoryName": "Underground Adventures",
+    "ShortDescription": "Discover underground wonders on this cave adventure.",
+    "AdventureCost": 120.00,
+    "BookingAvailability": "Available",
+    "Location": "Waitomo Caves, New Zealand",
+    "Duration": "3 hours",
+    "AdventureLevel": "Intermediate",
+    "IncludedItems": ["Helmet", "Headlamp", "Guide"],
+    "EcoFriendlyFeatures": ["No-touch policy", "Low-impact lighting"],
+    "MaxGroupSize": 6,
+    "SpecialInstructions": [
+      "Avoid touching formations",
+      "Wear sturdy shoes"
+    ]
+  },
+  {
+    "AdventureTitle": "Mountain Biking Challenge",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1005",
+    "CategoryName": "Cycling Adventures",
+    "ShortDescription": "Ride rugged mountain trails in a scenic environment.",
+    "AdventureCost": 90.00,
+    "BookingAvailability": "Available",
+    "Location": "Rocky Mountains, USA",
+    "Duration": "5 hours",
+    "AdventureLevel": "Advanced",
+    "IncludedItems": ["Bike rental", "Helmet", "Water bottle"],
+    "EcoFriendlyFeatures": ["Trail maintenance funding", "Reusable gear"],
+    "MaxGroupSize": 15,
+    "SpecialInstructions": [
+      "Must have biking experience",
+      "Stay on designated paths"
+    ]
+  },
+  {
+    "AdventureTitle": "Hot Air Balloon Ride",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1006",
+    "CategoryName": "Aerial Adventures",
+    "ShortDescription": "Soar above the landscape in a tranquil balloon ride.",
+    "AdventureCost": 180.00,
+    "BookingAvailability": "Available",
+    "Location": "Cappadocia, Turkey",
+    "Duration": "2 hours",
+    "AdventureLevel": "Beginner",
+    "IncludedItems": ["Pilot", "Safety briefing", "Champagne toast"],
+    "EcoFriendlyFeatures": ["Propane-efficient burners", "Wildlife awareness"],
+    "MaxGroupSize": 10,
+    "SpecialInstructions": [
+      "Arrive early for briefing",
+      "Dress in layers"
+    ]
+  },
+  {
+    "AdventureTitle": "Scuba Diving Expedition",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1007",
+    "CategoryName": "Water Adventures",
+    "ShortDescription": "Explore coral reefs and marine life on a dive tour.",
+    "AdventureCost": 220.00,
+    "BookingAvailability": "Available",
+    "Location": "Great Barrier Reef, Australia",
+    "Duration": "6 hours",
+    "AdventureLevel": "Intermediate",
+    "IncludedItems": ["Diving gear", "Instructor", "Underwater photos"],
+    "EcoFriendlyFeatures": ["Reef-safe sunscreen", "Marine conservation funding"],
+    "MaxGroupSize": 8,
+    "SpecialInstructions": [
+      "Must be certified diver",
+      "Do not touch coral"
+    ]
+  },
+  {
+    "AdventureTitle": "Rainforest Ziplining Adventure",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1008",
+    "CategoryName": "Aerial Adventures",
+    "ShortDescription": "Zip through lush canopies in a tropical rainforest.",
+    "AdventureCost": 110.00,
+    "BookingAvailability": "Available",
+    "Location": "Costa Rica",
+    "Duration": "3 hours",
+    "AdventureLevel": "Beginner",
+    "IncludedItems": ["Harness", "Helmet", "Certified guide"],
+    "EcoFriendlyFeatures": ["Built with minimal tree impact", "Wildlife observation platforms"],
+    "MaxGroupSize": 12,
+    "SpecialInstructions": [
+      "Closed-toe shoes required",
+      "Secure all loose items"
+    ]
+  },
+  {
+    "AdventureTitle": "Volcano Hiking Tour",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1009",
+    "CategoryName": "Mountain Adventures",
+    "ShortDescription": "Hike up an active volcano with expert guidance.",
+    "AdventureCost": 170.00,
+    "BookingAvailability": "Available",
+    "Location": "Mount Etna, Italy",
+    "Duration": "5 hours",
+    "AdventureLevel": "Intermediate",
+    "IncludedItems": ["Hiking poles", "Snacks", "Guide"],
+    "EcoFriendlyFeatures": ["Guided education", "Leave-no-trace policy"],
+    "MaxGroupSize": 10,
+    "SpecialInstructions": [
+      "Bring extra water",
+      "Be prepared for altitude changes"
+    ]
+  },
+  {
+    "AdventureTitle": "Snowmobile Arctic Safari",
+    "Image": "https://wallpapers.com/images/hd/messi-pictures-jzykf84saw6wbkd6.jpg",
+    "ID": "ADV1010",
+    "CategoryName": "Snow Adventures",
+    "ShortDescription": "Ride snowmobiles across frozen landscapes under the Northern Lights.",
+    "AdventureCost": 250.00,
+    "BookingAvailability": "Seasonal",
+    "Location": "Lapland, Finland",
+    "Duration": "4 hours",
+    "AdventureLevel": "Advanced",
+    "IncludedItems": ["Snowmobile", "Thermal gear", "Hot drinks"],
+    "EcoFriendlyFeatures": ["Electric snowmobiles", "Aurora preservation initiatives"],
+    "MaxGroupSize": 6,
+    "SpecialInstructions": [
+      "Valid driver’s license required",
+      "Wear thermal underlayers"
+    ]
+  }
+]
