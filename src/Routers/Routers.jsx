@@ -5,6 +5,7 @@ import NewsCard from "../Components/NewsCard";
 import SignUp from "../Pages/SignUp";
 import Explore from "../Pages/Explore";
 import ErrorPage from "../ErrorPage/ErrorPage";
+import PrivateRouter from "./PrivateRouter";
 
 const Routers = createBrowserRouter([
     {
@@ -25,7 +26,9 @@ const Routers = createBrowserRouter([
             },
             {
                 path: "/explore",
-                element: <Explore></Explore>
+                element: <PrivateRouter>
+                    <Explore></Explore>
+                </PrivateRouter>
             }
         ]
     },

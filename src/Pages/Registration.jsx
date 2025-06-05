@@ -1,14 +1,20 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Registration = () => {
   
-  const {googleLogin} = useContext(AuthContext)
+  const {googleLogin,setUser} = useContext(AuthContext)
+
   
+const location = useLocation();
+const navigate = useNavigate();
 
 
   const handleSubmit = (e) => {
+
+
+    
     e.preventDefault();
   
      const form = new FormData(e.target)
@@ -24,7 +30,8 @@ const Registration = () => {
   const google = () => {
        googleLogin()
      .then((result) => {
-      console.log(result);
+      setUser(result.user.email);
+      navigate(location?.state ? location.state : "/")
      })
      .catch((error) => {
       console.log(error.code)
