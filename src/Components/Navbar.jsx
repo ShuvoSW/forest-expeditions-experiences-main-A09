@@ -5,9 +5,19 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 const Navbar = () => { 
 
-  const {user} = useContext(AuthContext);
+  const {user,logOut} = useContext(AuthContext);
   console.log(user);
 
+
+  // const handleLogoutClick = () => {
+  //   handleLogout()
+  //   .then(() =>{
+  //     console.log("Logout successful");
+  //   })
+  //   .catch((error) => {
+  //     confirm.log("ERROR",error)
+  //   })
+  // }
 
   return (
     <div className=''>
@@ -17,15 +27,17 @@ const Navbar = () => {
           </div>
           <img src={logo} alt="" />
         </div>
-        <div className=' '>
+        <div className=' flex justify-center items-center'>
           <NavLink to="/" >Home</NavLink>
           <NavLink className="m-10">Update</NavLink>
-          <NavLink >
-            {user ? user: "Profile"}
+          <NavLink  >
+            <img className="rounded-full w-[70%]" src={user ? user: "Profile"} alt="" srcset="" />
           </NavLink>
         </div>
         <div className="navbar-end ">
-          <NavLink to="/signup" className="btn ml-8">Login</NavLink>
+          <NavLink to="/signup" className="btn ml-8">Login </NavLink>
+          <button onClick={logOut}>Logout</button>
+
         </div>
       </div>
     </div>

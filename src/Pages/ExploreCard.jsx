@@ -4,7 +4,7 @@ const ExploreCard = ({cart}) => {
     
     return (
         <div>
-            {ShortDescription}
+            {ShortDescription }
         </div>
     );
 };

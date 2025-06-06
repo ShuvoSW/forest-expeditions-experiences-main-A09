@@ -30,7 +30,8 @@ const navigate = useNavigate();
   const google = () => {
        googleLogin()
      .then((result) => {
-      setUser(result.user.email);
+      setUser(result.user.photoURL);
+      console.log(result)
       navigate(location?.state ? location.state : "/")
      })
      .catch((error) => {
