@@ -3,47 +3,44 @@ import { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 
 const Registration = () => {
-  
-  const {googleLogin,setUser,createNewUser} = useContext(AuthContext)
 
-  
-// const location = useLocation();
-// const navigate = useNavigate();
+  const { googleLogin, setUser, createNewUser } = useContext(AuthContext)
 
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
 
     e.preventDefault();
 
-     const form = new FormData(e.target)
-     const name = form.get("name")
-     const photo =form.get('photo')
-     const email =form.get("email")
-     const password = form.get("password")
-     console.log(name,photo,email,password)
-   
-     createNewUser(email,password)
-     .then(result => {
-      // const user = 
-      console.log(result.user)
-     setUser(result.user.email);
-     })
+    const form = new FormData(e.target)
+    const name = form.get("name")
+    const photo = form.get('photo')
+    const email = form.get("email")
+    const password = form.get("password")
+    console.log(name, photo, email, password)
+
+    createNewUser(email, password)
+      .then(result => {
+        console.log(result.user)
+        setUser(result.user.email);
+      })
       .catch(error => {
         console.log(error.code)
       })
   }
 
-  // const google = () => {
-  //      googleLogin()
-  //    .then((result) => {
-  //     setUser(result.user.photoURL);
-  //     console.log(result)
-  //     navigate(location?.state ? location.state : "/")
-  //    })
-  //    .catch((error) => {
-  //     console.log(error.code)
-  //    })
-  // }onClick={google}
+  const google = () => {
+    googleLogin()
+      .then((result) => {
+        setUser(result.user.photoURL);
+        console.log(result)
+        navigate(location?.state ? location.state : "/")
+      })
+      .catch((error) => {
+        console.log(error.code)
+      })
+  }
 
   return (
     <div className='lg:w-8/12 w-full mx-auto'>
@@ -70,11 +67,11 @@ const Registration = () => {
                 <label className="label">Password : </label>
                 <input type="password" name='password' className="input" placeholder="Password" />
 
-                        <button className=" flex btn btn-neutral rounded-none mt-4">Register</button>
+                <button className=" flex btn btn-neutral rounded-none mt-4">Register</button>
                 <div className='m-5'>
                   <div><a className="link link-hover">Forgot password?</a></div></div>
                 <div className='flex justify-center'>
-                  <button >Google</button>
+                  <button onClick={google} >Google</button>
                 </div>
                 <p>
                   If you have an account please,

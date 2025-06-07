@@ -37,12 +37,10 @@ const Routers = createBrowserRouter([
     {
         path: "*",
         element: <ErrorPage></ErrorPage>
-
     },
     {
         path: "/newTab",
         element: <NewTab></NewTab>
-
     }
 ])
 
