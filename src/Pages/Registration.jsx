@@ -4,40 +4,46 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 const Registration = () => {
   
-  const {googleLogin,setUser} = useContext(AuthContext)
+  const {googleLogin,setUser,createNewUser} = useContext(AuthContext)
 
   
-const location = useLocation();
-const navigate = useNavigate();
+// const location = useLocation();
+// const navigate = useNavigate();
 
 
   const handleSubmit = (e) => {
 
-
-    
     e.preventDefault();
-  
+
      const form = new FormData(e.target)
      const name = form.get("name")
-     console.log(name)
-
-
-  
-
-     
+     const photo =form.get('photo')
+     const email =form.get("email")
+     const password = form.get("password")
+     console.log(name,photo,email,password)
+   
+     createNewUser(email,password)
+     .then(result => {
+      // const user = 
+      console.log(result.user)
+     setUser(result.user.email);
+     })
+      .catch(error => {
+        console.log(error.code)
+      })
   }
 
-  const google = () => {
-       googleLogin()
-     .then((result) => {
-      setUser(result.user.photoURL);
-      console.log(result)
-      navigate(location?.state ? location.state : "/")
-     })
-     .catch((error) => {
-      console.log(error.code)
-     })
-  }
+  // const google = () => {
+  //      googleLogin()
+  //    .then((result) => {
+  //     setUser(result.user.photoURL);
+  //     console.log(result)
+  //     navigate(location?.state ? location.state : "/")
+  //    })
+  //    .catch((error) => {
+  //     console.log(error.code)
+  //    })
+  // }onClick={google}
 
   return (
     <div className='lg:w-8/12 w-full mx-auto'>
@@ -55,7 +61,7 @@ const navigate = useNavigate();
                 </div>
                 <div className='m-5'>
                   <label className="label ">Photo Url : </label>
-                  <input type="image" name='photo' className="input" placeholder="Email" />
+                  <input type="text" name='photo' className="input" placeholder="photo" />
                 </div>
                 <div className='m-5'>
                   <label className="label ">Email : </label>
@@ -68,7 +74,7 @@ const navigate = useNavigate();
                 <div className='m-5'>
                   <div><a className="link link-hover">Forgot password?</a></div></div>
                 <div className='flex justify-center'>
-                  <button onClick={google}>Google</button>
+                  <button >Google</button>
                 </div>
                 <p>
                   If you have an account please,

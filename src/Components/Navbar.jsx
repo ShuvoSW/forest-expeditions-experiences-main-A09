@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const {user,logOut} = useContext(AuthContext);
   console.log(user);
+  
 
 
   // const handleLogoutClick = () => {
@@ -30,13 +31,21 @@ const Navbar = () => {
         <div className=' flex justify-center items-center'>
           <NavLink to="/" >Home</NavLink>
           <NavLink className="m-10">Update</NavLink>
-          <NavLink  >
-            <img className="rounded-full w-[70%]" src={user ? user: "Profile"} alt="" srcset="" />
+          <NavLink>
+             
+             {
+              user ? 
+              <div>
+                {/* <img className="rounded-full w-[70%]" src={user} />  */}
+              <p>{user}</p>
+              </div>: "Profile"
+             }
           </NavLink>
         </div>
         <div className="navbar-end ">
           <NavLink to="/signup" className="btn ml-8">Login </NavLink>
           <button onClick={logOut}>Logout</button>
+          <NavLink to="/newTab"> new tab</NavLink>
 
         </div>
       </div>

@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 
 const HomeLayouts = () => {
     return (
-        <div >
+        <div  className='font-poppins'>
             <header>
                 <Header></Header>
             </header>

@@ -1,10 +1,10 @@
-const ExploreCard = ({cart}) => {
+const ExploreCard = () => {
 
-    const {ID, ShortDescription} = cart;
+    // const {ID, ShortDescription} = cart;{cart}
     
     return (
         <div>
-            {ShortDescription }
+            {/* {ShortDescription } */}
         </div>
     );
 };

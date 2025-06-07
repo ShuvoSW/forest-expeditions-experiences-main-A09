@@ -6,6 +6,7 @@ import SignUp from "../Pages/SignUp";
 import Explore from "../Pages/Explore";
 import ErrorPage from "../ErrorPage/ErrorPage";
 import PrivateRouter from "./PrivateRouter";
+import NewTab from "./NewTab";
 
 const Routers = createBrowserRouter([
     {
@@ -28,13 +29,19 @@ const Routers = createBrowserRouter([
                 path: "/explore",
                 element: <PrivateRouter>
                     <Explore></Explore>
-                </PrivateRouter>
+                </PrivateRouter>,
+                loader: ({params}) => fetch(`data.json${params.ID}`)
             }
         ]
     },
     {
         path: "*",
         element: <ErrorPage></ErrorPage>
+
+    },
+    {
+        path: "/newTab",
+        element: <NewTab></NewTab>
 
     }
 ])
